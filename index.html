@@ -1,0 +1,147 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/kz1j5dDo1yLHEVw2SWWNRiRs7K3I2jZyEeBPX2RiEbVm8i6JA.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Home
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white">
+    </i>
+    <i class="fas fa-bell text-white">
+    </i>
+    <img alt="User profile picture" class="h-8 w-8 rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/KGfTvOh9oswRGa6mknAjQtqbn20GuhFkeM0HkLaU9K2D5F1TA.jpg" width="30"/>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080');">
+   <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+   </div>
+   <div class="absolute bottom-24 left-8 md:left-16">
+    <h1 class="text-4xl md:text-6xl font-bold">
+     Movie Title
+    </h1>
+    <p class="mt-4 text-lg md:text-xl max-w-lg">
+     A brief description of the movie goes here. It should be engaging and give a glimpse of the plot.
+    </p>
+    <div class="mt-6 flex space-x-4">
+     <button class="bg-white text-black px-6 py-2 rounded-md flex items-center space-x-2">
+      <i class="fas fa-play">
+      </i>
+      <span>
+       Play
+      </span>
+     </button>
+     <button class="bg-gray-700 bg-opacity-75 text-white px-6 py-2 rounded-md flex items-center space-x-2">
+      <i class="fas fa-info-circle">
+      </i>
+      <span>
+       More Info
+      </span>
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Content Section -->
+  <section class="mt-8 px-4 md:px-16">
+   <!-- Row 1 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Trending movie 1" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/5HWVssPAFSpWO1hZaBKuI8Y3k6YaBOS1aQUixZXGv4mOei6JA.jpg" width="300"/>
+     <img alt="Trending movie 2" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/nQ6THVxXkLJiKZwkyoeCQ1kxl4UPqySax4uesE0KHerUyLqnA.jpg" width="300"/>
+     <img alt="Trending movie 3" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/WSuvW8EONVYoGlLlT1yKQgw57zCDbDUu1Y4wPsinAz0Uei6JA.jpg" width="300"/>
+     <img alt="Trending movie 4" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/cSNuaJaOlDbuANPqrGTLKt05BcfYFfeL7yvpN0SCfKeSLvoeE.jpg" width="300"/>
+     <img alt="Trending movie 5" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/9tyUfBjFr8QcMSmSE1FKqbQBj2ILtsiDDSf2alscCnm74F1TA.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 2 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Top Picks for You
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Top pick movie 1" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/HSEpRqttNJJ5GRAKGZu9pedriVBgJqGVwajAL73MqPxe4F1TA.jpg" width="300"/>
+     <img alt="Top pick movie 2" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/n3RSkpsBPB7rEZBJz6wYorfeRx2lV8ekcx27SmKbtvCcyLqnA.jpg" width="300"/>
+     <img alt="Top pick movie 3" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/qkQfOPDezSkRQkYZbvTGG8DG5COg1AXH6dqJc7S8infekXUPB.jpg" width="300"/>
+     <img alt="Top pick movie 4" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/SL7VQY28FIIKEdnyq1GUG6VF6GQIbn9f2Ux8HhJlni9b8i6JA.jpg" width="300"/>
+     <img alt="Top pick movie 5" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/FSQDoOxLaYKgKVhca9ieIdAvvC6tTsWG0zC1GyU7ABKb8i6JA.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 3 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     New Releases
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="New release movie 1" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/D1oJRenn2QQRLyeomoPiMGPzW79ZpCqlWB3C8sjWZoSI5F1TA.jpg" width="300"/>
+     <img alt="New release movie 2" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/oI6SfflZwji12UZpiVeFqpxwHtiU0V3ky3A0uDTbh5kiyLqnA.jpg" width="300"/>
+     <img alt="New release movie 3" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/dy61rR6SwqKMFxzx2aZtyLqNJiDJ2QuNnPZmpxXBbbQOei6JA.jpg" width="300"/>
+     <img alt="New release movie 4" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/pQaMTueFHuwtLK2pOatyzfmUC1DwhzMTq7B3h2iYGbLC5F1TA.jpg" width="300"/>
+     <img alt="New release movie 5" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/of2TEnr36fkfOI3sUTlZiIQqEYsslje1fwSkQyc5pa1lHvoeE.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 4 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Watch It Again
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Watch it again movie 1" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/CCOGbM3wabrNFFVWnBfrPVI9VzgjrrWH7xzTx3AkXjfW5F1TA.jpg" width="300"/>
+     <img alt="Watch it again movie 2" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/bCVipGutTcr4MpLMJjjBgYHo6M2brocpfCK5NNFCtLTq8i6JA.jpg" width="300"/>
+     <img alt="Watch it again movie 3" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/1W7EXmqSofWYGKFeBwqwmUPLzfjGREYCYfq0sp1T2f1JLvoeE.jpg" width="300"/>
+     <img alt="Watch it again movie 4" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/k41Lxh84sMrzPhEf7uOYpyBYvNmSB3cKreD1l4spcSeCyLqnA.jpg" width="300"/>
+     <img alt="Watch it again movie 5" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/rnJqXrhoZzJnOdHpKIGIcIG0VjdEFfDJaaeJNFO30vjfxLqnA.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 5 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Popular on Netflix
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Popular movie 1" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/sEzmAcwxqt5xOZkc2TeDcbf96BHhrdtm6nWwmKpgFp7X5F1TA.jpg" width="300"/>
+     <img alt="Popular movie 2" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/taAXe6sqDwXjHa6hX4CZaiT9EC0OBiF1m7Zw7o2MqJ3m8i6JA.jpg" width="300"/>
+     <img alt="Popular movie 3" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/ee2FVlUeLaYVHojfRPDFAGotKnRqWgQwt6UZXhvFRzLakXUPB.jpg" width="300"/>
+     <img alt="Popular movie 4" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/i3oXWUdgzfTydq3SOa423mmT2VeVAhw5U2PJJaixTKZF5F1TA.jpg" width="300"/>
+     <img alt="Popular movie 5" class="w-64 h-40 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/N6neelfMaeAyVQv8H75GSV1mByXa1UwTQDbI00Vbnm3JlXUPB.jpg" width="300"/>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
